@@ -13,14 +13,12 @@ public class FileManager {
         }catch(Exception e){
             e.printStackTrace();//gui manager soll ein fenster öffnen hier
         }
-
     }
 
     public void takeOutDataFromFile(){
        while(this.fileReader.hasNextLine()){
            tempSave.add(fileReader.nextLine());
        }
-
     }
 
     public void fillInData(){

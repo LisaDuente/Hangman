@@ -26,14 +26,12 @@ public class Game {
                 "Your word: " + this.getFillInWordAsString() + "\n"+
                 "You already guessed: "+ this.getWrongCharacters() +"\n"+
                 "Please insert your next letter in the textfield!";
-
     }
 
     /**
      * starts the game and handles the input
      */
-    public void update(String alpha)
-    {
+    public void update(String alpha) {
         //checks the input
         alpha = alpha.toUpperCase();
         char input;
@@ -98,8 +96,7 @@ public class Game {
     /**
      * method to generate a random word from the array
      */
-    public void selectGameWord()
-    {
+    public void selectGameWord(){
         Random rand = new Random();
         int n = rand.nextInt(wordList.length);
         this.wordForGame = wordList[n];
@@ -114,8 +111,7 @@ public class Game {
     /**
      * creates a character array for a new game and fills it with _
      */
-    public void setFillInWord()
-    {
+    public void setFillInWord() {
         this.fillInWord = new char[this.wordForGame.length()];
         Arrays.fill(this.fillInWord, '_');
     }
@@ -126,8 +122,7 @@ public class Game {
      * If not the letter is added in the array.
      * @param inputLetter Char
      */
-    public void manageWrongCharacters(char inputLetter)
-    {
+    public void manageWrongCharacters(char inputLetter) {
         boolean isInArray = false;
 
         for(int i = 0; i<this.wrongLetterArray.length; i++)
@@ -149,8 +144,7 @@ public class Game {
      * translates the fillInWord-array to a string
      * @return String
      */
-    public String getFillInWordAsString()
-    {
+    public String getFillInWordAsString() {
         String word = "";
         for(int i = 0; i<this.wordForGame.length(); i++)
         {
@@ -163,8 +157,7 @@ public class Game {
      * translates the wrongCharacters-array to a string
      * @return String
      */
-    public String getWrongCharacters()
-    {
+    public String getWrongCharacters() {
         String word = "";
         for(int i = 0; i<10; i++)
         {
@@ -180,8 +173,7 @@ public class Game {
      * returns a string with as many * as there were wrong letters
      * @return
      */
-    public String getWrongCount()
-    {
+    public String getWrongCount() {
         String word = "";
         if(this.wrongLetterCounter > 0)
         {
@@ -213,7 +205,7 @@ public class Game {
         return this.exception;
     }
 
-    public void setException(String exception) {
+    public void setException(String exception){
         this.exception = exception;
     }
 }

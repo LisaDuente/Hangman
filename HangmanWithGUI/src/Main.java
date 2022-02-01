@@ -6,12 +6,5 @@ public class Main {
 
         GuiManager gui = new GuiManager(newGame, newPlayer, manager);
         gui.showMenu();
-
-
-
-        System.out.println(manager.checkData(newPlayer.getName()));
-        System.out.println(manager.getTempSave());
-        System.out.println(newPlayer.getName());
-
     }
 }
