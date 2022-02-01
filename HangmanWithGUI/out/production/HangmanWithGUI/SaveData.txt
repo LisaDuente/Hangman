@@ -1,0 +1,14 @@
+Alex 1 2
+Lisa 3 7
+Tim 0 0
+Hanna 0 0
+Janna 0 0
+Florian 0 0
+Gabi 0 0
+Herman 1 1
+Gustav 0 0
+Agnes 0 0
+Edwin 0 0
+Killian 0 0
+Jannis 0 0
+Katrin 0 0
